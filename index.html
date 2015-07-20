@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+	<head>
+		<title> Angular test</title>
+		<script src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+		<script src='angular-resource.min.js'></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body ng-controller='SomeController as ctrl'>
+		<div class="container">
+			<ul class="picturesList">
+				<li class="thumbnail" ng-repeat="item in ctrl.posts" itemdata='item' index="$index">
+			</ul>
+		</div>
+	</body>
+	<script src='app.module.js'></script>
+	<script src='someController.js'></script>
+	<script src='htmlFactory.js'--></script>
+	<script src='resorseFactory.js'--></script>
+	<script src='thumbnailDirective.js'--></script>
+</html>
